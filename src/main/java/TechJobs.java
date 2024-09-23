@@ -124,10 +124,10 @@ TechJobs {
             System.out.print("No Results");
         }
         else {
-            for (int i = 0; i < someJobs.size(); i++) {
-                System.out.println("\n" + "*****");
-                Map<String, String> searchResult = someJobs.get(i);
-                for (Map.Entry<String, String> job : searchResult.entrySet()) {
+            for ( Map<String, String> searchResult: someJobs) {
+               System.out.println("\n" + "*****");
+
+             for (Map.Entry<String, String> job : searchResult.entrySet()) {
                     System.out.println(job.getKey() + ": " + job.getValue());
                 }
 
