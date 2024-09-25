@@ -49,9 +49,21 @@ public class JobData {
 
         // load data, if not already loaded
         loadData();
+        //        return allJobs;
 
-        return allJobs;
+        //Bonus Mission 2.Creating clone using copy constructor
+
+
+
+        ArrayList<HashMap<String, String>> allJobsCopy;
+
+        // Return a copy of the list to prevent external modifications.
+        allJobsCopy = new ArrayList<>(allJobs);
+        return allJobsCopy;
     }
+
+
+
 
     /**
      * Returns results of search the jobs data by key/value, using
