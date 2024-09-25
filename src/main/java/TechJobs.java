@@ -45,6 +45,10 @@ TechJobs {
                     System.out.println("\n*** All " + columnChoices.get(columnChoice) + " Values ***");
 
                     // Print list of skills, employers, etc
+
+                    //Bonus Mission 1: sorting list
+                    results.sort(Comparator.naturalOrder());
+
                     for (String item : results) {
                         System.out.println(item);
                     }
